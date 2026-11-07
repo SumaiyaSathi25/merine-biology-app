@@ -1,16 +1,65 @@
-# React + Vite
+# 🌊 Marine Biology Explore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An educational web application focused on exploring marine biology and learning about marine life.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://merine-biology-explore.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📖 About the Project
 
-## React Compiler
+Marine Biology Explore is a web development project created to explore the world of marine biology through a website.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is part of my learning journey as a web developer. It helps me improve my frontend development skills through practical implementation.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- Vite
+- HTML5
+- CSS3
+- JavaScript
+
+## 🚀 Getting Started
+
+Follow these steps to run the project on your local computer.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/SumaiyaSathi25/merine-biology-app.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd merine-biology-app
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+## 🌐 Live Website
+
+Visit the deployed application:
+
+https://merine-biology-explore.vercel.app/
+
+## 👩‍💻 Author
+
+**Sumaiya Sathi**
+
+- GitHub: https://github.com/SumaiyaSathi25
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository!
