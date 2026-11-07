@@ -52,7 +52,7 @@ Open the local URL displayed in your terminal.
 
 Visit the deployed application:
 
-https://merine-biology-explore.vercel.app/
+https://marine-biology-explore.vercel.app/
 
 ## 👩‍💻 Author
 
