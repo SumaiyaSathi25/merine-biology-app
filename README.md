@@ -62,4 +62,12 @@ https://marine-biology-explore.vercel.app/
 
 ---
 
+
+## Development
+
+This project is continuously being improved as part of my web development learning journey.
+
 ⭐ If you find this project interesting, feel free to explore the repository!
+
+
+
