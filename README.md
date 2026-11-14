@@ -2,8 +2,7 @@
 
 An educational web application focused on exploring marine biology and learning about marine life.
 
-🔗 **Live Demo:** https://merine-biology-explore.vercel.app/
-
+🔗 **Live Demo:** https://marine-biology-explore.vercel.app/
 ## 📖 About the Project
 
 Marine Biology Explore is a web development project created to explore the world of marine biology through a website.
