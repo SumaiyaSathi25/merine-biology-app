@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import MarineFeature from "./components/MarineFeature.jsx";
 import {
   Waves,
   Compass,
@@ -264,11 +265,11 @@ export default function App() {
             className="flex items-center gap-3 cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/30">
+            <div className="w-10 h-10 rounded-xl bg-linear-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/30">
               <Waves className="w-6 h-6 text-slate-950 stroke-[2.5]" />
             </div>
             <div>
-              <span className="text-xl font-black tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-300 to-amber-300 uppercase">
+              <span className="text-xl font-black tracking-wider bg-clip-text text-transparent bg-linear-to-r from-cyan-400 via-blue-300 to-amber-300 uppercase">
                 ASTRAL DEEP
               </span>
               <span className="block text-[10px] tracking-widest text-cyan-400/70 font-mono uppercase">
@@ -339,8 +340,8 @@ export default function App() {
       {/* 2. Hero Section */}
       <section className="relative pt-20 pb-32 px-4 overflow-hidden border-b border-cyan-500/10">
         {/* Ambient Glow Effects */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-cyan-500/15 blur-[140px] rounded-full pointer-events-none" />
-        <div className="absolute top-1/3 right-10 w-[400px] h-[300px] bg-blue-600/15 blur-[130px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-150 h-87.5 bg-cyan-500/15 blur-[140px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/3 right-10 w-100 h-75 bg-blue-600/15 blur-[130px] rounded-full pointer-events-none" />
 
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-950/40 text-cyan-300 text-xs font-mono mb-6 backdrop-blur-sm">
@@ -350,7 +351,7 @@ export default function App() {
 
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
             Unveil the Mysteries of the <br className="hidden sm:inline" />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-teal-200 to-amber-300">
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-cyan-400 via-teal-200 to-amber-300">
               Ocean Depths
             </span>
           </h1>
@@ -364,7 +365,7 @@ export default function App() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <a
               href="#depth-zones"
-              className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-black text-sm tracking-wide shadow-lg shadow-cyan-500/25 hover:brightness-110 transition flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-linear-to-r from-cyan-500 to-blue-600 text-slate-950 font-black text-sm tracking-wide shadow-lg shadow-cyan-500/25 hover:brightness-110 transition flex items-center justify-center gap-2"
             >
               <span>Descend to 11,000m</span>
               <ArrowDown className="w-4 h-4" />
@@ -423,6 +424,8 @@ export default function App() {
         </div>
       </section>
 
+      <MarineFeature />
+
       {/* 3. Interactive Ocean Depth Zones Explorer */}
       <section
         id="depth-zones"
@@ -458,7 +461,7 @@ export default function App() {
                 >
                   <div className="flex items-center gap-4">
                     <div
-                      className={`w-3 h-12 rounded-full bg-gradient-to-b ${zone.color}`}
+                      className={`w-3 h-12 rounded-full bg-linear-to-b ${zone.color}`}
                     />
                     <div>
                       <h3 className="font-bold text-white text-base">
@@ -480,7 +483,7 @@ export default function App() {
           {/* Dynamic Interactive Zone Card Display */}
           <div className="lg:col-span-7">
             <div
-              className={`p-8 rounded-3xl bg-gradient-to-b ${activeZone.color} border border-cyan-500/30 backdrop-blur-xl shadow-2xl relative overflow-hidden transition-all duration-500`}
+              className={`p-8 rounded-3xl bg-linear-to-b ${activeZone.color} border border-cyan-500/30 backdrop-blur-xl shadow-2xl relative overflow-hidden transition-all duration-500`}
             >
               {/* Environmental Metrics Grid */}
               <div className="flex items-center justify-between border-b border-white/10 pb-6 mb-6">
@@ -734,7 +737,7 @@ export default function App() {
 
             <button
               onClick={() => showToast("Live Submersible Feed Synchronized!")}
-              className="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold text-xs uppercase tracking-wider hover:brightness-110 transition shadow-lg shadow-cyan-500/20"
+              className="w-full py-3 rounded-xl bg-linear-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold text-xs uppercase tracking-wider hover:brightness-110 transition shadow-lg shadow-cyan-500/20"
             >
               Request Camera Control
             </button>
